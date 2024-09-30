@@ -8,16 +8,16 @@ Check complete details in project_details.txt file
 # Behave is a behavior-driven development (BDD) framework for Python that allows you to write tests in a natural
 # language style using Gherkin syntax. It helps in creating tests that are more readable and understandable for both
 # technical and non-technical stakeholders.
-# pytest -v tests/login_BDD.py
-# pytest -v tests/login_BDD.py --html=report.html
+# pytest -v tests/test_login_BDD.py
+# pytest -v tests/test_login_BDD.py --html=report.html
 """
 log results:
-tests/login_BDD.py::test_open_webpage PASSED
-tests/login_BDD.py::test_input_valid_credentials PASSED
-tests/login_BDD.py::test_click_login_button PASSED
-tests/login_BDD.py::test_redirect_to_dashboard PASSED
-tests/login_BDD.py::test_logout PASSED
-tests/login_BDD.py::test_close_browser PASSED
+tests/test_login_BDD.py::test_open_webpage PASSED
+tests/test_login_BDD.py::test_input_valid_credentials PASSED
+tests/test_login_BDD.py::test_click_login_button PASSED
+tests/test_login_BDD.py::test_redirect_to_dashboard PASSED
+tests/test_login_BDD.py::test_logout PASSED
+tests/test_login_BDD.py::test_close_browser PASSED
 """
 
 
