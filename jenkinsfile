@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout from dev-env branch
-                git branch: 'dev-env', url: 'https://github.com/rinkugupta3/Selenium_Cucumber'
+                git branch: 'dev', url: 'https://github.com/rinkugupta3/Selenium_Cucumber'
 
                 // To switch to main branch, comment out the above line and uncomment the line below:
                 // git branch: 'main', url: 'https://github.com/rinkugupta3/Selenium_Cucumber'
