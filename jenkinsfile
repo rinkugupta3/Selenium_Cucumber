@@ -4,7 +4,6 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/rinkugupta3/Selenium_Cucumber'
-                // git branch: 'dev', url: 'https://github.com/rinkugupta3/Selenium_Cucumber'
             }
         }
         stage('Set up Python environment') {
