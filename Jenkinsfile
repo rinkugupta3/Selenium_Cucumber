@@ -18,14 +18,15 @@ pipeline {
         }
         stage('Dev - Env Playwright Tests') {
             steps {
-                bat "C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pytest"
+                bat "C:/Users/dhira/AppData/Local/Programs/Python/Python311/python.exe -m pytest --html=reportbdd.html"
             }
         }
     }
-   post {
+    post {
         always {
             echo 'Cleaning up...'
-            archiveArtifacts artifacts: 'screenshots/**/*', allowEmptyArchive: true
+            // Include both the report and screenshots
+            archiveArtifacts artifacts: 'reportbdd.html, screenshots/**/*', allowEmptyArchive: true
         }
         success {
             echo 'Pipeline succeeded!'
